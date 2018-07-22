@@ -61,7 +61,7 @@ public final class QueryUtils {
                String location = properties.getString("place");
 
                // Extract the value for the key called "time"
-               String time = properties.getString("time");
+               long time = properties.getLong("time");
 
                // Create a new Earthquake object with the magnitude, location, and time
                // from the JSON response

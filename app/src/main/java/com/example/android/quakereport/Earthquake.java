@@ -8,13 +8,13 @@ public class Earthquake {
     //Location of the earthquake
     private String mLocation;
 
-    //Date of the earthquake
-    private String mDate;
+    // Time of the earthquake
+    private long mTimeInMilliseconds;
 
-    public Earthquake(String magnitute, String location, String date){
+    public Earthquake(String magnitute, String location, long timeInMilliseconds){
         mMagnitute = magnitute;
         mLocation = location;
-        mDate = date;
+        mTimeInMilliseconds = timeInMilliseconds;
     }
 
     public String getMagnitute() {
@@ -25,8 +25,8 @@ public class Earthquake {
         return mLocation;
     }
 
-    public String getDate() {
-        return mDate;
+    public long getTimeInMilliseconds() {
+        return mTimeInMilliseconds;
     }
 
 
